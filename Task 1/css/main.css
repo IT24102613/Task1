@@ -1,0 +1,21 @@
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #bb9a74, #4b2909);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #c09761, #744d10);
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(135deg, #d66531, #fd7e14);
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #343a40, #000);
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(135deg, #df9814, #a1bdec);
+}
+
+

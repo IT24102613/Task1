@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/main.css"
+    />
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header></header>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+      aria-label="Eighth navbar example"
+    >
+      <div class="container rounded-5">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample07"
+          aria-controls="navbarsExample07"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="http://127.0.0.1:5500/#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/#about-us"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://127.0.0.1:5500/#Products"
+                tabindex="-1"
+                aria-disabled="true"
+                >Our products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/contacts.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+
+          <form>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="position-relative vh-100 text-dark p-2 d-flex flex-column justify-content-center align-items-center"
+      style="
+        background-image: url('https://cdn.shopify.com/s/files/1/1695/0039/files/Close-up_of_cinnamon_sticks_and_ground_cinnamon_480x480.webp?v=1734651693');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+      "
+    >
+      <div
+        class="container-fluid d-flex bg-gradient-success justify-content-center align-items-center h-auto w-auto pb-3"
+        style="width: 40%; height: 40%"
+      >
+        <div class="col-row-auto">
+          <main class="form-signin m-auto">
+            <form id="myForm">
+              <h1 class="h3 mb-2 fw-semibold fs-2 text-center pt-2">
+                Contact Us!
+              </h1>
+              <p
+                class="px-5 fw-normal fs-5 m-0"
+                style="font-family: 'Times New Roman,serif'"
+              >
+                Your Name:
+              </p>
+              <div class="form-floating px-5" style="width: 60">
+                <input
+                  type="text"
+                  class="form-control p-3"
+                  id="validateInput"
+                  placeholder="name"
+                  style="height: 5px"
+                />
+                <label for="name"></label>
+              </div>
+
+              <p
+                class="px-5 fw-normal fs-5 m-0 mt-2"
+                style="font-family: 'Times New Roman,serif'"
+              >
+                E-mail:
+              </p>
+              <div class="form-floating px-5">
+                <input
+                  type="email"
+                  class="form-control p-3"
+                  id="validateInput2"
+                  style="height: 5px"
+                />
+                <label for="email"></label>
+              </div>
+              <p
+                class="px-5 fw-normal fs-5 m-0 mt-2"
+                style="font-family: 'Times New Roman,serif'"
+              >
+                Phone:
+              </p>
+              <div class="form-floating px-5">
+                <input
+                  type="text"
+                  class="form-control p-3"
+                  id="validateInput4"
+                  style="height: 5px"
+                />
+                <label for="phone"></label>
+              </div>
+              <p
+                class="px-5 fw-normal fs-5 m-0 mt-2"
+                style="font-family: 'Times New Roman,serif'"
+              >
+                Message :
+              </p>
+              <div class="form-floating px-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validateInput3"
+                  style="height: 90px"
+                />
+                <label for="validateInput3"></label>
+
+                <button
+                  class="w-50 btn btn-lg btn-dark d-block m-auto mt-5"
+                  type="submit"
+                  onclick="showSuccessmessage()"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </main>
+
+          <div
+            id="successMessage"
+            style="display: none; color: green; margin-top: 10px"
+            class="alert alert-success"
+          >
+            Success! Your form has been submitted. <br />
+          </div>
+          <div
+            id="errormessage"
+            style="display: none; color: red; margin-top: 10px"
+            class="alert alert-danger"
+          >
+            invalid inputs.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          document.getElementById("successMessage").style.display = "none";
+          document.getElementById("errormessage").style.display = "none";
+
+          let name = document.getElementById("validateInput").value.trim();
+          let email = document.getElementById("validateInput2").value.trim();
+          let message = document.getElementById("validateInput3").value.trim();
+
+          if (name === "" || email === "" || message === "") {
+            document.getElementById("errormessage").style.display = "block";
+            return false;
+          }
+          document.getElementById("successMessage").style.display = "block";
+
+          this.reset();
+        });
+    </script>
+    <footer class="bg-dark text-white-50 py-2">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Email - ceylonspices@gmail.com</li>
+        <li>Phone - 0771234563</li>
+        <li>Address - Rathmalana, Sri Lanka</li>
+      </ul>
+    </footer>
+  </body>
+</html>
